@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Sign up {% endblock %}
+
+{% block content %}
+<div class="w-1/2 my-6 mx-auto p-6 bg-gray-200 rounded-xl">
+    <div class="mb-3">
+        <label for="">Name : </label>
+        {{user.first_name}} {{user.last_name}}
+    </div>
+    <div class="mb-3">
+        <label for="">Username : </label>
+        {{user.username}}
+    </div>
+    <div class="mb-3">
+        <label for="">User Type : </label>
+        {{user.user_type1}}
+    </div>
+
+    <div class="mb-3">
+        <label for="">Email : </label>
+        {{user.email}}
+    </div>
+
+    <div class="mb-3">
+        <label for="">Address : </label>
+        {{user.address}}
+    </div>
+
+
+</div>
+
+{% endblock %}
